@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html><head><style>
+body { font-family: 'Segoe UI', sans-serif; margin: 20px; background: #f5f5f5; max-width: 800px; }
+.container { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+h2 { color: #1a1a2e; border-bottom: 2px solid #e94560; padding-bottom: 8px; font-size: 16px; }
+pre { background: #1e1e2e; color: #cdd6f4; padding: 15px; border-radius: 6px; font-size: 13px; overflow-x: auto; line-height: 1.5; }
+.output pre { background: #0d1117; color: #58a6ff; }
+.title { font-size: 14px; color: #666; margin-bottom: 5px; }
+</style></head><body>
+<div class="container">
+<h2>Source Code - Graded Lab Task 7 - Cricket Tickets</h2>
+<pre>import java.util.Scanner;
+
+public class GLabTask7 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Class A tickets sold: ");
+        int classA = input.nextInt();
+        System.out.print("Enter Class B tickets sold: ");
+        int classB = input.nextInt();
+        System.out.print("Enter Class C tickets sold: ");
+        int classC = input.nextInt();
+        System.out.print("Enter Class D tickets sold: ");
+        int classD = input.nextInt();
+
+        double incomeA = classA * 20;
+        double incomeB = classB * 15;
+        double incomeC = classC * 10;
+        double incomeD = classD * 5;
+        double total = incomeA + incomeB + incomeC + incomeD;
+
+        System.out.println("Income from Class A: $" + incomeA);
+        System.out.println("Income from Class B: $" + incomeB);
+        System.out.println("Income from Class C: $" + incomeC);
+        System.out.println("Income from Class D: $" + incomeD);
+        System.out.println("Total Income: $" + total);
+    }
+}
+</pre>
+</div>
+<div class="container output">
+<h2>Output</h2>
+<pre>Enter Class A tickets sold: Enter Class B tickets sold: Enter Class C tickets sold: Enter Class D tickets sold: Income from Class A: $2000.0
+Income from Class B: $3000.0
+Income from Class C: $1500.0
+Income from Class D: $250.0
+Total Income: $6750.0</pre>
+</div>
+</body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head><style>
+body { font-family: 'Segoe UI', sans-serif; margin: 20px; background: #f5f5f5; max-width: 800px; }
+.container { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+h2 { color: #1a1a2e; border-bottom: 2px solid #e94560; padding-bottom: 8px; font-size: 16px; }
+pre { background: #1e1e2e; color: #cdd6f4; padding: 15px; border-radius: 6px; font-size: 13px; overflow-x: auto; line-height: 1.5; }
+.output pre { background: #0d1117; color: #58a6ff; }
+.title { font-size: 14px; color: #666; margin-bottom: 5px; }
+</style></head><body>
+<div class="container">
+<h2>Source Code - Graded Lab Task 3 - Comprehensive Program</h2>
+<pre>import java.util.Scanner;
+
+public class GLabTask3 {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        final int SECRET = 11;
+        final double RATE = 12.50;
+        int num1, num2, newNum;
+        String name;
+        double hoursWorked, wages;
+
+        System.out.print("Enter two integers: ");
+        num1 = console.nextInt();
+        num2 = console.nextInt();
+
+        System.out.println("The value of num1 = " + num1 + " and the value of num2 = " + num2 + ".");
+
+        newNum = num1 * 2 + num2;
+        System.out.println("newNum = " + newNum);
+
+        newNum = newNum + SECRET;
+        System.out.println("After adding SECRET, newNum = " + newNum);
+
+        console.nextLine(); // consume newline
+        System.out.print("Enter last name: ");
+        name = console.nextLine();
+
+        System.out.print("Enter hours worked (0-70): ");
+        hoursWorked = console.nextDouble();
+
+        wages = RATE * hoursWorked;
+
+        System.out.println("Name: " + name);
+        System.out.println("Pay Rate: $" + RATE);
+        System.out.println("Hours Worked: " + hoursWorked);
+        System.out.println("Salary: $" + wages);
+    }
+}
+</pre>
+</div>
+<div class="container output">
+<h2>Output</h2>
+<pre>Enter two integers: The value of num1 = 13 and the value of num2 = 28.
+newNum = 54
+After adding SECRET, newNum = 65
+Enter last name: Enter hours worked (0-70): Name: Mustafa
+Pay Rate: $12.5
+Hours Worked: 48.3
+Salary: $603.75</pre>
+</div>
+</body></html>

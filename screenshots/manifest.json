@@ -1,0 +1,202 @@
+[
+  {
+    "lab_num": 1,
+    "entry_name": "Activity 1 - Payroll Program",
+    "code": "import java.util.Scanner;\n\npublic class Payroll {\n    public static void main(String[] args) {\n        Scanner keyboard = new Scanner(System.in);\n        double payRate, grossPay;\n        int hours;\n        System.out.print(\"How many hours did you work? \");\n        hours = keyboard.nextInt();\n        System.out.print(\"What is your hourly pay rate? \");\n        payRate = keyboard.nextDouble();\n        if (hours > 40) {\n            grossPay = (40 * payRate) + ((hours - 40) * payRate * 1.5);\n        } else {\n            grossPay = hours * payRate;\n        }\n        System.out.println(\"Your gross pay is $\" + grossPay);\n    }\n}\n",
+    "output": "How many hours did you work? What is your hourly pay rate? Your gross pay is $800.0",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab1_Payroll.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab1_Payroll.png"
+  },
+  {
+    "lab_num": 1,
+    "entry_name": "Activity 2 - SalesTax Debugging",
+    "code": "import java.util.Scanner;\n\npublic class SalesTax {\n    public static void main(String[] args) {\n        Scanner keyboard = new Scanner(System.in);\n        double price, tax, total;\n        final double TAX_RATE = 0.06;\n        System.out.print(\"Enter the item price: \");\n        price = keyboard.nextDouble();\n        tax = price * TAX_RATE;\n        total = price + tax;\n        System.out.println(\"Price: $\" + price);\n        System.out.println(\"Tax: $\" + tax);\n        System.out.println(\"Total: $\" + total);\n    }\n}\n",
+    "output": "Enter the item price: Price: $100.0\nTax: $6.0\nTotal: $106.0",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab1_SalesTax.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab1_SalesTax.png"
+  },
+  {
+    "lab_num": 2,
+    "entry_name": "Activity 1 - Variable Manipulation",
+    "code": "public class Activity1 {\n    public static void main(String[] args) {\n        int num1;\n        int num2;\n        double sale;\n        char first;\n        num1 = 4;\n        System.out.println(\"num1 = \" + num1);\n        num2 = 4 * 5 - 11;\n        System.out.println(\"num2 = \" + num2);\n        sale = 0.02 * 1000;\n        System.out.println(\"sale = \" + sale);\n        first = 'D';\n        System.out.println(\"first = \" + first);\n    }\n}\n",
+    "output": "num1 = 4\nnum2 = 9\nsale = 20.0\nfirst = D",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity1.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity1.png"
+  },
+  {
+    "lab_num": 2,
+    "entry_name": "Activity 2 - Input Statements",
+    "code": "import java.util.Scanner;\n\npublic class Activity2 {\n    public static void main(String[] args) {\n        Scanner console = new Scanner(System.in);\n        int feet;\n        int inches;\n        System.out.print(\"Enter two integers separated by spaces. \");\n        feet = console.nextInt();\n        inches = console.nextInt();\n        System.out.print(\"feet = \" + feet);\n        System.out.print(\" inches = \" + inches);\n        System.out.println();\n    }\n}\n",
+    "output": "Enter two integers separated by spaces. feet = 23 inches = 7",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity2.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity2.png"
+  },
+  {
+    "lab_num": 2,
+    "entry_name": "Activity 3 - Reading Strings & Numbers",
+    "code": "import java.util.*;\n\npublic class Activity3 {\n    static Scanner console = new Scanner(System.in);\n\n    public static void main(String[] args) {\n        String firstName;\n        String lastName;\n        int age;\n        double weight;\n        System.out.println(\"Enter first name, last name, age, and weight separated by spaces.\");\n        firstName = console.next();\n        lastName = console.next();\n        age = console.nextInt();\n        weight = console.nextDouble();\n        System.out.print(\"Name: \" + firstName + \" \" + lastName);\n        System.out.print(\" Age: \" + age);\n        System.out.print(\" Weight: \" + weight);\n        System.out.println();\n    }\n}\n",
+    "output": "Enter first name, last name, age, and weight separated by spaces.\nName: Sheila Mann Age: 23 Weight: 120.5",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity3.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity3.png"
+  },
+  {
+    "lab_num": 2,
+    "entry_name": "Activity 4 - Characters & Integers",
+    "code": "public class Activity4 {\n    public static void main(String[] args) {\n        char letter;\n        letter = 65;\n        System.out.println(letter);\n        letter = 66;\n        System.out.println(letter);\n    }\n}\n",
+    "output": "A\nB",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity4.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity4.png"
+  },
+  {
+    "lab_num": 2,
+    "entry_name": "Activity 5 - Constants (Circle Area)",
+    "code": "import java.util.Scanner;\n\npublic class Activity5 {\n    public static void main(String[] args) {\n        final double PI = 3.14159;\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter a number for radius: \");\n        double radius = input.nextDouble();\n        double area = radius * radius * PI;\n        System.out.println(\"The area for the circle of radius \" + radius + \" is \" + area);\n    }\n}\n",
+    "output": "Enter a number for radius: The area for the circle of radius 1.0 is 3.14159",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity5.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_Activity5.png"
+  },
+  {
+    "lab_num": 2,
+    "entry_name": "Graded Lab Task 1 - Average Calculation",
+    "code": "public class GLabTask1 {\n    public static void main(String[] args) {\n        int num1, num2, num3, average;\n        num1 = 125;\n        num2 = 28;\n        num3 = -25;\n        average = (num1 + num2 + num3) / 3;\n        System.out.println(\"num1 = \" + num1);\n        System.out.println(\"num2 = \" + num2);\n        System.out.println(\"num3 = \" + num3);\n        System.out.println(\"average = \" + average);\n    }\n}\n",
+    "output": "num1 = 125\nnum2 = 28\nnum3 = -25\naverage = 42",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_GLabTask1.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_GLabTask1.png"
+  },
+  {
+    "lab_num": 2,
+    "entry_name": "Graded Lab Task 2 - Rectangle Area & Perimeter",
+    "code": "import java.util.*;\n\npublic class GLabTask2 {\n    public static void main(String[] args) {\n        Scanner console = new Scanner(System.in);\n        int length;\n        int width;\n        int area;\n        int perimeter;\n        System.out.print(\"Enter the length: \");\n        length = console.nextInt();\n        System.out.println();\n        System.out.print(\"Enter the width: \");\n        width = console.nextInt();\n        System.out.println();\n        area = length * width;\n        perimeter = 2 * (length + width);\n        System.out.println(\"Area = \" + area);\n        System.out.println(\"Perimeter = \" + perimeter);\n    }\n}\n",
+    "output": "Enter the length: \nEnter the width: \nArea = 50\nPerimeter = 30",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_GLabTask2.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_GLabTask2.png"
+  },
+  {
+    "lab_num": 2,
+    "entry_name": "Graded Lab Task 3 - Comprehensive Program",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask3 {\n    public static void main(String[] args) {\n        Scanner console = new Scanner(System.in);\n        final int SECRET = 11;\n        final double RATE = 12.50;\n        int num1, num2, newNum;\n        String name;\n        double hoursWorked, wages;\n\n        System.out.print(\"Enter two integers: \");\n        num1 = console.nextInt();\n        num2 = console.nextInt();\n\n        System.out.println(\"The value of num1 = \" + num1 + \" and the value of num2 = \" + num2 + \".\");\n\n        newNum = num1 * 2 + num2;\n        System.out.println(\"newNum = \" + newNum);\n\n        newNum = newNum + SECRET;\n        System.out.println(\"After adding SECRET, newNum = \" + newNum);\n\n        console.nextLine(); // consume newline\n        System.out.print(\"Enter last name: \");\n        name = console.nextLine();\n\n        System.out.print(\"Enter hours worked (0-70): \");\n        hoursWorked = console.nextDouble();\n\n        wages = RATE * hoursWorked;\n\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Pay Rate: $\" + RATE);\n        System.out.println(\"Hours Worked: \" + hoursWorked);\n        System.out.println(\"Salary: $\" + wages);\n    }\n}\n",
+    "output": "Enter two integers: The value of num1 = 13 and the value of num2 = 28.\nnewNum = 54\nAfter adding SECRET, newNum = 65\nEnter last name: Enter hours worked (0-70): Name: Mustafa\nPay Rate: $12.5\nHours Worked: 48.3\nSalary: $603.75",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_GLabTask3.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab2_GLabTask3.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Activity 1 - E Notation",
+    "code": "public class Activity1 {\n    public static void main(String[] args) {\n        double distance, mass;\n        distance = 1.495979E11;\n        mass = 1.989E30;\n        System.out.println(\"The sun is \" + distance + \" meters away.\");\n        System.out.println(\"The sun's mass is \" + mass + \" kilograms.\");\n    }\n}\n",
+    "output": "The sun is 1.495979E11 meters away.\nThe sun's mass is 1.989E30 kilograms.",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity1.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity1.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Activity 2 - Hourly Wages + Overtime",
+    "code": "public class Activity2 {\n    public static void main(String[] args) {\n        double regularWages;\n        double basePay = 25;\n        double regularHours = 40;\n        double overtimeWages;\n        double overtimePay = 37.5;\n        double overtimeHours = 10;\n        double totalWages;\n        regularWages = basePay * regularHours;\n        overtimeWages = overtimePay * overtimeHours;\n        totalWages = regularWages + overtimeWages;\n        System.out.println(\"Wages for this week are $\" + totalWages);\n    }\n}\n",
+    "output": "Wages for this week are $1375.0",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity2.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity2.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Activity 3 - Retirement Contributions",
+    "code": "public class Activity3 {\n    public static void main(String[] args) {\n        double monthlyPay = 6000.0;\n        double contribution;\n        contribution = monthlyPay * 0.05;\n        System.out.println(\"5 percent is $\" + contribution + \" per month.\");\n        contribution = monthlyPay * 0.08;\n        System.out.println(\"8 percent is $\" + contribution + \" per month.\");\n        contribution = monthlyPay * 0.1;\n        System.out.println(\"10 percent is $\" + contribution + \" per month.\");\n    }\n}\n",
+    "output": "5 percent is $300.0 per month.\n8 percent is $480.0 per month.\n10 percent is $600.0 per month.",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity3.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity3.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Activity 4 - Formatted Output (printf)",
+    "code": "public class Activity4 {\n    public static void main(String[] args) {\n        double num1 = 127.899;\n        double num2 = 3465.148;\n        double num3 = 3.776;\n        double num4 = 264.821;\n        double num5 = 88.081;\n        double num6 = 1799.999;\n        System.out.printf(\"%8.2f\\n\", num1);\n        System.out.printf(\"%8.2f\\n\", num2);\n        System.out.printf(\"%8.2f\\n\", num3);\n        System.out.printf(\"%8.2f\\n\", num4);\n        System.out.printf(\"%8.2f\\n\", num5);\n        System.out.printf(\"%8.2f\\n\", num6);\n    }\n}\n",
+    "output": "127.90\n 3465.15\n    3.78\n  264.82\n   88.08\n 1800.00",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity4.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity4.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Activity 5 - Sales Tax Calculation",
+    "code": "import java.util.Scanner;\n\npublic class Activity5 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter purchase amount: \");\n        double purchaseAmount = input.nextDouble();\n        double tax = purchaseAmount * 0.06;\n        System.out.println(\"Sales tax is $\" + (int)(tax * 100) / 100.0);\n    }\n}\n",
+    "output": "Enter purchase amount: Sales tax is $11.85",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity5.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_Activity5.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 1 - Money Change",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask1 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter an amount in double (e.g., 11.56): \");\n        double amount = input.nextDouble();\n        int remainingCents = (int)(amount * 100);\n\n        int dollars = remainingCents / 100;\n        remainingCents = remainingCents % 100;\n\n        int quarters = remainingCents / 25;\n        remainingCents = remainingCents % 25;\n\n        int dimes = remainingCents / 10;\n        remainingCents = remainingCents % 10;\n\n        int nickels = remainingCents / 5;\n        remainingCents = remainingCents % 5;\n\n        int pennies = remainingCents;\n\n        System.out.println(\"Your amount \" + amount + \" consists of\");\n        System.out.println(\"  \" + dollars + \" dollars\");\n        System.out.println(\"  \" + quarters + \" quarters\");\n        System.out.println(\"  \" + dimes + \" dimes\");\n        System.out.println(\"  \" + nickels + \" nickels\");\n        System.out.println(\"  \" + pennies + \" pennies\");\n    }\n}\n",
+    "output": "Enter an amount in double (e.g., 11.56): Your amount 11.56 consists of\n  11 dollars\n  2 quarters\n  0 dimes\n  1 nickels\n  1 pennies",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask1.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask1.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 2 - Apple Distribution",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask2 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter number of students (N): \");\n        int N = input.nextInt();\n        System.out.print(\"Enter number of apples (K): \");\n        int K = input.nextInt();\n\n        int applesPerStudent = K / N;\n        int remaining = K % N;\n\n        System.out.println(applesPerStudent);\n        System.out.println(remaining);\n    }\n}\n",
+    "output": "Enter number of students (N): Enter number of apples (K): 8\n2",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask2.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask2.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 3 - Desks Calculation",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask3 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter students in class 1: \");\n        int a = input.nextInt();\n        System.out.print(\"Enter students in class 2: \");\n        int b = input.nextInt();\n        System.out.print(\"Enter students in class 3: \");\n        int c = input.nextInt();\n\n        int desks = (a + 1) / 2 + (b + 1) / 2 + (c + 1) / 2;\n        System.out.println(\"Minimum desks needed: \" + desks);\n    }\n}\n",
+    "output": "Enter students in class 1: Enter students in class 2: Enter students in class 3: Minimum desks needed: 33",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask3.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask3.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 4 - Digital Clock",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask4 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter minutes since midnight (N): \");\n        int N = input.nextInt();\n\n        int hours = N / 60;\n        int minutes = N % 60;\n\n        System.out.println(hours + \" \" + minutes);\n    }\n}\n",
+    "output": "Enter minutes since midnight (N): 2 30",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask4.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask4.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 5 - Milk Cartons",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask5 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter total milk produced (liters): \");\n        double totalMilk = input.nextDouble();\n\n        double cartonCapacity = 3.78;\n        double costPerLiter = 0.38;\n        double profitPerCarton = 0.27;\n\n        int cartons = (int) Math.ceil(totalMilk / cartonCapacity);\n        double cost = totalMilk * costPerLiter;\n        double profit = cartons * profitPerCarton;\n\n        System.out.println(\"Number of cartons: \" + cartons);\n        System.out.printf(\"Cost of producing milk: $%.2f%n\", cost);\n        System.out.printf(\"Profit: $%.2f%n\", profit);\n    }\n}\n",
+    "output": "Enter total milk produced (liters): Number of cartons: 27\nCost of producing milk: $38.00\nProfit: $7.29",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask5.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask5.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 6 - Summer Job Income",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask6 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter pay rate per hour: \");\n        double payRate = input.nextDouble();\n        System.out.print(\"Enter hours worked per week: \");\n        double hoursPerWeek = input.nextDouble();\n\n        int weeks = 5;\n        double grossIncome = payRate * hoursPerWeek * weeks;\n        double taxes = grossIncome * 0.14;\n        double netIncome = grossIncome - taxes;\n\n        double clothes = netIncome * 0.10;\n        double supplies = netIncome * 0.01;\n        double remaining = netIncome - clothes - supplies;\n        double savingsBonds = remaining * 0.25;\n        double parentsBonds = savingsBonds * 0.50;\n\n        System.out.printf(\"Income before taxes: $%.2f%n\", grossIncome);\n        System.out.printf(\"Income after taxes: $%.2f%n\", netIncome);\n        System.out.printf(\"Money spent on clothes: $%.2f%n\", clothes);\n        System.out.printf(\"Money spent on school supplies: $%.2f%n\", supplies);\n        System.out.printf(\"Money spent on savings bonds: $%.2f%n\", savingsBonds);\n        System.out.printf(\"Parents' savings bonds: $%.2f%n\", parentsBonds);\n    }\n}\n",
+    "output": "Enter pay rate per hour: Enter hours worked per week: Income before taxes: $3100.00\nIncome after taxes: $2666.00\nMoney spent on clothes: $266.60\nMoney spent on school supplies: $26.66\nMoney spent on savings bonds: $593.19\nParents' savings bonds: $296.59",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask6.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask6.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 7 - Cricket Tickets",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask7 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter Class A tickets sold: \");\n        int classA = input.nextInt();\n        System.out.print(\"Enter Class B tickets sold: \");\n        int classB = input.nextInt();\n        System.out.print(\"Enter Class C tickets sold: \");\n        int classC = input.nextInt();\n        System.out.print(\"Enter Class D tickets sold: \");\n        int classD = input.nextInt();\n\n        double incomeA = classA * 20;\n        double incomeB = classB * 15;\n        double incomeC = classC * 10;\n        double incomeD = classD * 5;\n        double total = incomeA + incomeB + incomeC + incomeD;\n\n        System.out.println(\"Income from Class A: $\" + incomeA);\n        System.out.println(\"Income from Class B: $\" + incomeB);\n        System.out.println(\"Income from Class C: $\" + incomeC);\n        System.out.println(\"Income from Class D: $\" + incomeD);\n        System.out.println(\"Total Income: $\" + total);\n    }\n}\n",
+    "output": "Enter Class A tickets sold: Enter Class B tickets sold: Enter Class C tickets sold: Enter Class D tickets sold: Income from Class A: $2000.0\nIncome from Class B: $3000.0\nIncome from Class C: $1500.0\nIncome from Class D: $250.0\nTotal Income: $6750.0",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask7.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask7.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 8 - Sum of Digits",
+    "code": "import java.util.Scanner;\n\npublic class GLabTask8 {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        System.out.print(\"Enter a number between 0 and 1000: \");\n        int number = input.nextInt();\n\n        int digit1 = number % 10;\n        int digit2 = (number / 10) % 10;\n        int digit3 = (number / 100) % 10;\n        int sum = digit1 + digit2 + digit3;\n\n        System.out.println(\"The sum of the digits is \" + sum);\n    }\n}\n",
+    "output": "Enter a number between 0 and 1000: The sum of the digits is 14",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask8.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask8.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 9 - Printf Output",
+    "code": "public class GLabTask9 {\n    public static void main(String[] args) {\n        double x = 75.3987;\n        double y = 982.89764;\n        System.out.printf(\"%.2f %n\", x);\n        System.out.printf(\"%.2f %n\", y);\n        System.out.printf(\"%.3f %n\", x);\n        System.out.printf(\"%.3f %n\", y);\n    }\n}\n",
+    "output": "75.40 \n982.90 \n75.399 \n982.898",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask9.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask9.png"
+  },
+  {
+    "lab_num": 3,
+    "entry_name": "Graded Lab Task 10 - Trig Table",
+    "code": "public class GLabTask10 {\n    public static void main(String[] args) {\n        System.out.printf(\"%-10s%-10s%-10s%-10s%-10s%n\", \"Degrees\", \"Radians\", \"Sine\", \"Cosine\", \"Tangent\");\n\n        int degrees = 30;\n        double radians = Math.toRadians(degrees);\n        double sin = Math.sin(radians);\n        double cos = Math.cos(radians);\n        double tan = Math.tan(radians);\n        System.out.printf(\"%-10d%-10.4f%-10.4f%-10.4f%-10.4f%n\", degrees, radians, sin, cos, tan);\n\n        degrees = 60;\n        radians = Math.toRadians(degrees);\n        sin = Math.sin(radians);\n        cos = Math.cos(radians);\n        tan = Math.tan(radians);\n        System.out.printf(\"%-10d%-10.4f%-10.4f%-10.4f%-10.4f%n\", degrees, radians, sin, cos, tan);\n    }\n}\n",
+    "output": "Degrees   Radians   Sine      Cosine    Tangent   \n30        0.5236    0.5000    0.8660    0.5774    \n60        1.0472    0.8660    0.5000    1.7321",
+    "html_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask10.html",
+    "png_path": "C:\\Users\\HP\\OneDrive\\Desktop\\Panversity work\\SKills\\Programming-Fundamentals\\screenshots\\Lab3_GLabTask10.png"
+  }
+]

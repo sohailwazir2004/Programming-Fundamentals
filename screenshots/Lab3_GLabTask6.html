@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html><head><style>
+body { font-family: 'Segoe UI', sans-serif; margin: 20px; background: #f5f5f5; max-width: 800px; }
+.container { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+h2 { color: #1a1a2e; border-bottom: 2px solid #e94560; padding-bottom: 8px; font-size: 16px; }
+pre { background: #1e1e2e; color: #cdd6f4; padding: 15px; border-radius: 6px; font-size: 13px; overflow-x: auto; line-height: 1.5; }
+.output pre { background: #0d1117; color: #58a6ff; }
+.title { font-size: 14px; color: #666; margin-bottom: 5px; }
+</style></head><body>
+<div class="container">
+<h2>Source Code - Graded Lab Task 6 - Summer Job Income</h2>
+<pre>import java.util.Scanner;
+
+public class GLabTask6 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter pay rate per hour: ");
+        double payRate = input.nextDouble();
+        System.out.print("Enter hours worked per week: ");
+        double hoursPerWeek = input.nextDouble();
+
+        int weeks = 5;
+        double grossIncome = payRate * hoursPerWeek * weeks;
+        double taxes = grossIncome * 0.14;
+        double netIncome = grossIncome - taxes;
+
+        double clothes = netIncome * 0.10;
+        double supplies = netIncome * 0.01;
+        double remaining = netIncome - clothes - supplies;
+        double savingsBonds = remaining * 0.25;
+        double parentsBonds = savingsBonds * 0.50;
+
+        System.out.printf("Income before taxes: $%.2f%n", grossIncome);
+        System.out.printf("Income after taxes: $%.2f%n", netIncome);
+        System.out.printf("Money spent on clothes: $%.2f%n", clothes);
+        System.out.printf("Money spent on school supplies: $%.2f%n", supplies);
+        System.out.printf("Money spent on savings bonds: $%.2f%n", savingsBonds);
+        System.out.printf("Parents' savings bonds: $%.2f%n", parentsBonds);
+    }
+}
+</pre>
+</div>
+<div class="container output">
+<h2>Output</h2>
+<pre>Enter pay rate per hour: Enter hours worked per week: Income before taxes: $3100.00
+Income after taxes: $2666.00
+Money spent on clothes: $266.60
+Money spent on school supplies: $26.66
+Money spent on savings bonds: $593.19
+Parents' savings bonds: $296.59</pre>
+</div>
+</body></html>

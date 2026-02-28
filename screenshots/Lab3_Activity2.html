@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head><style>
+body { font-family: 'Segoe UI', sans-serif; margin: 20px; background: #f5f5f5; max-width: 800px; }
+.container { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+h2 { color: #1a1a2e; border-bottom: 2px solid #e94560; padding-bottom: 8px; font-size: 16px; }
+pre { background: #1e1e2e; color: #cdd6f4; padding: 15px; border-radius: 6px; font-size: 13px; overflow-x: auto; line-height: 1.5; }
+.output pre { background: #0d1117; color: #58a6ff; }
+.title { font-size: 14px; color: #666; margin-bottom: 5px; }
+</style></head><body>
+<div class="container">
+<h2>Source Code - Activity 2 - Hourly Wages + Overtime</h2>
+<pre>public class Activity2 {
+    public static void main(String[] args) {
+        double regularWages;
+        double basePay = 25;
+        double regularHours = 40;
+        double overtimeWages;
+        double overtimePay = 37.5;
+        double overtimeHours = 10;
+        double totalWages;
+        regularWages = basePay * regularHours;
+        overtimeWages = overtimePay * overtimeHours;
+        totalWages = regularWages + overtimeWages;
+        System.out.println("Wages for this week are $" + totalWages);
+    }
+}
+</pre>
+</div>
+<div class="container output">
+<h2>Output</h2>
+<pre>Wages for this week are $1375.0</pre>
+</div>
+</body></html>

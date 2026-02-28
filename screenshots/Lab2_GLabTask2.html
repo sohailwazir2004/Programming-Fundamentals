@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head><style>
+body { font-family: 'Segoe UI', sans-serif; margin: 20px; background: #f5f5f5; max-width: 800px; }
+.container { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+h2 { color: #1a1a2e; border-bottom: 2px solid #e94560; padding-bottom: 8px; font-size: 16px; }
+pre { background: #1e1e2e; color: #cdd6f4; padding: 15px; border-radius: 6px; font-size: 13px; overflow-x: auto; line-height: 1.5; }
+.output pre { background: #0d1117; color: #58a6ff; }
+.title { font-size: 14px; color: #666; margin-bottom: 5px; }
+</style></head><body>
+<div class="container">
+<h2>Source Code - Graded Lab Task 2 - Rectangle Area & Perimeter</h2>
+<pre>import java.util.*;
+
+public class GLabTask2 {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        int length;
+        int width;
+        int area;
+        int perimeter;
+        System.out.print("Enter the length: ");
+        length = console.nextInt();
+        System.out.println();
+        System.out.print("Enter the width: ");
+        width = console.nextInt();
+        System.out.println();
+        area = length * width;
+        perimeter = 2 * (length + width);
+        System.out.println("Area = " + area);
+        System.out.println("Perimeter = " + perimeter);
+    }
+}
+</pre>
+</div>
+<div class="container output">
+<h2>Output</h2>
+<pre>Enter the length: 
+Enter the width: 
+Area = 50
+Perimeter = 30</pre>
+</div>
+</body></html>
